@@ -31,6 +31,17 @@ app.post ('/api/notes', function(req, res){
         text: req.body.text,
         id: uuidv4()
     }
+    fs.readFile('./db/db.json' , 'utf-8', function(err, data){
+        if (err) throw err
+        let db = JSON.parse(data)
+        db.push(notes)
+
+        fs.writeFile('./db/db.json', JSON.stringify(db), function(err){
+            if(err) throw err
+            console.log('new note saved');
+        })
+        res.sendFile(path.join(__dirname, '/public/notes.html'));
+    })
 })
 
 
