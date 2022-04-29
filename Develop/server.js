@@ -24,3 +24,22 @@ app.get("/api/notes", function(req, res){
         res.json(JSON.parse(data))
     })
 });
+
+app.post ('/api/notes', function(req, res){
+    const notes = {
+        title: req.body.title,
+        text: req.body.text,
+        id: uuidv4()
+    }
+})
+
+
+
+
+
+
+
+
+app.listen(PORT, function(){
+    console.log('Listenning on' + 'http://localhost:3001');
+})
