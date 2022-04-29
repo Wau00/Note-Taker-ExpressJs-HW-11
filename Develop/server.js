@@ -44,6 +44,24 @@ app.post ('/api/notes', function(req, res){
     })
 })
 
+app.delete('/api/notes/:id', function(req, res) {
+    let eliminateNotes = req.params.id
+
+    fs.readFile('./db/db.json', 'utf-8', function(err, data){
+        if (err) throw err
+        let db = JSON.parse(data)
+        let newDb = db.filter(item => item.id !== eliminateNotes)
+        
+        fs.writeFile('./db/db.json', JSON.stringify(newDb), function(err) {
+            if (err) throw err;
+            console.log ('note deleted');
+        })
+        res.sendFile(path.join(__dirname, '/public/notes.html'));
+    })
+
+})
+
+
 
 
 
