@@ -64,4 +64,5 @@ app.delete('/api/notes/:id', function (req, res) {
 
 app.listen(PORT, function () {
     console.log('Listening on ' + 'http://localhost:3001');
+    console.log('Heroku Test');
 })
