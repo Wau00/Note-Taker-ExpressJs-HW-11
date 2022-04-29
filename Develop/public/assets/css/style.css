@@ -3,7 +3,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #1e1e1e;
 }
 
 .save-note {
@@ -19,7 +18,7 @@ body {
 
 .note-textarea,
 .note-title {
-  color: #fff;
+  color: #000000;
   width: 100%;
   outline: none;
   border: none;
@@ -29,39 +28,13 @@ body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
-  background-color: #1e1e1e;
 }
 
 .note-title {
   height: 50px;
   margin-top: 13px;
   font-size: 3rem;
-  background-color: #1e1e1e;
 }
-
-.jumbotron{
-  background-color: #38333d;
-}
-
-.display-4,
-.mt-4{
-  color: #fff;
-}
-
-.bg{
-  background-color: #38333d;
-}
-
-.col-4{
-  background-color: #2f2935;
-}
-
-.card{
-  background-color: #231c29;
-}
-
-
-
 
 .note-title:read-only,
 .note-textarea:read-only {
