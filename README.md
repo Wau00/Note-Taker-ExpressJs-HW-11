@@ -1,7 +1,7 @@
 # Note-Taker-ExpressJs-HW-11
 
 # Description
-In this project, we build a Notes Taker, which helps the user to take, save, and delete notes on the page just clicking on the designated buttons. This application back-end was build with node.js, and multiple npm packages (express,uuid, and nodemon) and the deployed app is hosted using Heroku technology. 
+In this project, we build a Notes Taker. The app has de ability of create, save, and delete notes on the page just by clicking on the designated buttons. This application back-end was build with node.js, and multiple npm packages (express,uuid, and nodemon) the deployed app is hosted using Heroku technology. 
 
 # Table of Content
 
